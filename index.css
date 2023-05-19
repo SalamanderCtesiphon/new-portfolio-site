@@ -1,3 +1,11 @@
+/* custom properties */
+
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;;
+}
+
 /* general reset */
 
 *,
@@ -76,16 +84,14 @@ select {
   border: 0;
 }
 
-.box {
-  background-color: lightblue;
-  padding: 3rem;
-}
+/*  colors */
 
-.page {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-}
+.bg-dark { background-color: hsl( var(--clr-dark) );}
+.bg-accent { background-color: hsl( var(--clr-light) );}
+.bg-white { background-color: hsl( var(--clr-white) );}
+
+.text-dark { color: hsl( var(--clr-dark) );}
+.text-accent { color: hsl( var(--clr-light) );}
+.text-white { color: hsl( var(--clr-white) );}
+
+
