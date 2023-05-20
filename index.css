@@ -97,6 +97,12 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+  outline: 1px solid red;
+}
+
+
 .container {
   padding-inline: 2em;
   max-width: 80rem;
@@ -165,4 +171,18 @@ select {
   margin-right: .5em;
   font-weight: 700;
   color: hsl( var(--clr-white) / .25);
+}
+
+
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+
+.large-button {
+  display: grid;
+  place-items: center;
+  padding: 0 2em;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  text-decoration: none;
 }
